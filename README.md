@@ -1,5 +1,5 @@
-![Alt Text](https://ibb.co/FhHzyyW)
 
+<a href="https://ibb.co/FhHzyyW"><img src="https://i.ibb.co/3TRcjjs/ezgif-6-319662677ff8.gif" alt="ezgif-6-319662677ff8" border="0"></a>
 
 
 ### `npm start`
