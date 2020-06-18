@@ -2,8 +2,7 @@
 
 ![Alt Text](https://img.techpowerup.org/200618/ezgif-6-0eca7552e098.gif)
 
-
-This is the IPFS uploader to store your image to IPFS network with option to download with its hash.
+## This is the IPFS uploader to store your image to IPFS network with option to download with its hash.
 
 In the project directory, you can run:
 ### `npm start`
