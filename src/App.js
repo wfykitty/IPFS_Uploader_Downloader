@@ -14,9 +14,9 @@ const ipfs = IPFSClient({
   
   function App() {
     const [buffer, setBuffer] = useState(null); 
-    const [picHash, setPicHash] = useState(''); 
+    const [newHash, setNewHash] = useState(''); 
 
-    var hash = "";
+   var hash = "";
 
     const captureFile = (event) => {
       event.preventDefault()
@@ -38,12 +38,11 @@ const ipfs = IPFSClient({
     ipfs.files.add(Buffer.from(buffer),(err,res)=>{
           res.forEach(output => {
             console.log(output)
-            // hash=output.path;
-            setPicHash(output.path);
+            setNewHash(output.path);
           });
       })
-     console.log('Ipfs result', hash, picHash);
-     setPicHash(hash);
+     console.log('Ipfs result', hash, newHash);
+     setNewHash(hash);
     } 
 
 
@@ -56,16 +55,16 @@ const ipfs = IPFSClient({
         <div> 2. Click submit botton to save it to IPFS and generate the hash </div>
         <div>3. The image can be displayed and download by click download button</div>
 
-      <img src={`https://ipfs.io/ipfs/${picHash}`} alt=""/>
+      <img src={`https://ipfs.io/ipfs/${newHash}`} alt=""/>
       <h2>Upload Image</h2>
       <form onSubmit={onSubmit} >
       <input type='file' onChange={captureFile} />
       <input type='submit' />
       
       {/* {condition && element}   */}
-      { picHash && <p>File hash: {picHash}</p>}
+      { newHash && <p>File hash: {newHash}</p>}
         
-        <a href={`https://ipfs.io/ipfs/${picHash}`}
+        <a href={`https://ipfs.io/ipfs/${newHash}`}
         target="_blank"
         download>
           
@@ -79,5 +78,5 @@ const ipfs = IPFSClient({
                 </div>
             );
           }
-
+     
 export default App;
