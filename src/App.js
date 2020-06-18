@@ -15,9 +15,8 @@ const ipfs = IPFSClient({
   function App() {
     const [buffer, setBuffer] = useState(null); 
     const [picHash, setPicHash] = useState(''); 
-   //Why are you setting your picHash with your node hash then?
-   //its just a variable name i sett in the begginning, will change it | OK
-   var hash = "";
+
+    var hash = "";
 
     const captureFile = (event) => {
       event.preventDefault()
@@ -81,7 +80,4 @@ const ipfs = IPFSClient({
             );
           }
 
-        
-        
-        
 export default App;
