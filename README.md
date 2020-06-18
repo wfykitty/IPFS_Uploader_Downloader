@@ -1,6 +1,4 @@
-
-<a href="https://ibb.co/FhHzyyW"><img src="https://i.ibb.co/3TRcjjs/ezgif-6-319662677ff8.gif" alt="ezgif-6-319662677ff8" border="0"></a>
-
+![Alt Text](https://img.techpowerup.org/200618/ezgif-6-0eca7552e098.gif)
 
 ### `npm start`
 
